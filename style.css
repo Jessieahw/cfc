@@ -1,0 +1,258 @@
+/* no dot is selecting element, with dot is seleting class */
+.sub h1{
+    background-color: #e3f2fd; /* Light blue */
+    padding: 20px 0;
+    color: #0056b3; /* Matches existing blue accent */
+    text-align: center;
+    border-bottom: 3px solid #0056b3;
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+    background-size: cover;  /* Ensures the image covers the entire title area */
+    background-position: center;  /* Centers the image */
+    
+}
+
+.main-header {
+    position: relative;
+    background-image: url('photo.jpg'); /* Path to the image */
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    text-align: center;
+    padding: 250px 0; /* Adjust padding to control the height of the header */
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for better readability */
+}
+
+/* Transparent Overlay */
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Place the overlay below the text */
+}
+
+/* Ensure Text is Above the Overlay */
+.main-header h1 {
+    position: relative;
+    z-index: 2; /* Place the text above the overlay */
+    color: whitesmoke;
+}
+
+
+.div1 h2{
+    color:blueviolet;
+}
+.mydiv img{
+    text-align: center;
+    height:100px;
+}
+.mydiv h2{
+    color: purple;
+}
+/* .icon1,.icon2,.icon3{
+    float:right;
+    margin-right: 50px;
+    color: darkblue;
+} */
+.sidenav {
+    position: fixed; /* Keeps it fixed on the screen */
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Stretches from the left edge */
+    width: 100%; /* Full width of the page */
+    height: 50px; /* Adjust the height of the bar */
+    background-color: #333; /* Dark background color */
+    display: flex; /* Flexbox for horizontal layout */
+    align-items: center; /* Vertically center the links */
+    padding: 0 20px; /* Horizontal padding for spacing */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    justify-content: flex-end; /* Align content to the right */
+  
+}
+
+.sidenav a {
+    padding: 0 15px; /* Adjust spacing between links */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 18px; /* Sets the font size */
+    color: white; /* Text color */
+    transition: 0.3s; /* Smooth hover transition */
+    display: flex;
+    margin-right: 30px;
+    
+}
+
+.sidenav a:hover {
+    background-color: #575757; /* Highlight background on hover */
+    color: #f1f1f1; /* Lighter text color on hover */
+    
+}
+.photo,.photo2{
+    width: 500px;
+}
+
+
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f9f9f9; */
+    color: #333;
+    /* background: linear-gradient(to bottom, #f7f7f7, #ffffff); Light gradient */
+    background: url("https://www.transparenttextures.com/patterns/concrete-wall.png"); /* Example texture */
+  }
+
+ 
+
+  h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: square;
+  }
+
+  ul li {
+    margin-bottom: 8px;
+  }
+/* 
+  .card {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  
+
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  } */
+
+
+  .card {
+    background: #fff; /* Keep the card white for contrast */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Adds a lifting effect */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
+  }
+  
+  /* Add a subtle border accent */
+  .card::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 100%;
+    background-color: #0056b3; /* Accent color */
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+/* .skills {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+  } */
+  .skills {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555; /* Neutral gray */
+    border-left: 3px solid #0056b3; /* Accent border */
+    padding-left: 15px;
+  }
+
+
+.btn {
+    background-color: #0056b3; /* Accent color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #003c82; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight hover effect */
+  }
+
+
+/* Styling for the Career section */
+.Career {
+    text-align: center; /* Center-align text inside the div */
+   
+    border-radius: 10px; /* Rounded corners */
+    
+}
+
+
+
+/* Footer Style */
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: #f1f1f1; /* Light text for contrast */
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* Style for footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Align items vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Style for the unordered list */
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* List item styling */
+footer ul li {
+    margin: 10px 0;
+}
+
+/* Styling for links */
+footer a {
+    color: #00bcd4; /* Cyan link color */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
